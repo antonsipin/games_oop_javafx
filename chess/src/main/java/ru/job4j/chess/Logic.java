@@ -14,7 +14,7 @@ import java.util.Optional;
  * @since 0.1
  */
 public class Logic {
-    public static final Figure[] figures = new Figure[32];
+    private final Figure[] figures = new Figure[32];
     private int index = 0;
 
     public void add(Figure figure) {
