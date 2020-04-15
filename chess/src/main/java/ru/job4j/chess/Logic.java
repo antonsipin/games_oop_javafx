@@ -14,7 +14,7 @@ import java.util.Optional;
  * @since 0.1
  */
 public class Logic {
-    private final Figure[] figures = new Figure[32];
+    public static final Figure[] figures = new Figure[32];
     private int index = 0;
 
     public void add(Figure figure) {
@@ -41,7 +41,7 @@ public class Logic {
         this.index = 0;
     }
 
-    private int findBy(Cell cell) {
+    public int findBy(Cell cell) {
         int rst = -1;
         for (int index = 0; index != this.figures.length; index++) {
             if (this.figures[index] != null && this.figures[index].position().equals(cell)) {
