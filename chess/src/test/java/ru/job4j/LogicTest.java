@@ -38,4 +38,11 @@ public class LogicTest {
         boolean rst = logic.move(C1, G5);
         assertThat(rst,is(false));
     }
+
+    @Test
+    public void isWayFree() {
+        Logic logic = new Logic();
+        boolean rst = logic.move(E5, F6);
+        assertThat(rst,is(false));
+    }
 }
